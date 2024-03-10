@@ -1,0 +1,17 @@
+class ForExample01 {
+	public static void main(String[] args) { //142쪽 실습예제 -\n을 이용해 별나무 만들기- 마지막 줄넘김 제거
+	
+	System.out.println("별나무 줄 숫자를 입력하세요.");
+	
+	double count= 5;
+	String chr = "";
+
+	for (int num1= 1; num1 <= count ; num1++){
+		for(int num2= 1; num2 <= num1; num2++){
+			chr += "*";
+		}if(num1 <= count-1){
+			chr += "\n";
+			}
+	}System.out.println(chr);
+	}
+} //내가 한건 마지막 줄넘김 삭제가 안되는데 이유가 뭘까?
