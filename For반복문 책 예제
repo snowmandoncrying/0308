@@ -1,0 +1,12 @@
+class ForExample01 {
+	public static void main(String[] args) { //131쪽 실습예제 -식권 자판기 만들기
+	
+	System.out.println("식권이 몇 장 필요한가요?");
+	
+	int count= 1;
+
+	for (; count <= 10 ; count= count + 1){
+		System.out.println("[식권] #" + count);
+		}
+	}
+}
