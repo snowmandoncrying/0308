@@ -1,0 +1,76 @@
+class ForExample01 {
+	public static void main(String[] args) { //break문 -보통 조건식(if문)과 같이 씀
+	
+
+	while(true){
+		int num=(int)(Math.random()*6)+1;
+		System.out.println(num);
+		if(num == 6){ //무한히 나오는 주사위에서 숫자 6이 나오면 정지해
+			break;
+			}
+		}
+	}
+}
+
+class ForExample01 {
+	public static void main(String[] args) { //break문 -보통 조건식(if문)과 같이 씀
+	
+
+	for(; true;){ //똑같은 식을 for문으로 만들어보자
+		int num=(int)(Math.random()*6)+1;
+		System.out.println(num);
+		if(num == 6){ //랜덤으로 무한히 나오는 주사위에서 숫자 6이 나오면 정지해
+			break;
+			}
+		}
+	}
+}
+
+class ForExample01 {
+	public static void main(String[] args) { //break문 -1부터 20까지 더한 누적합계의 크기가 10보다 큰 때는 언제인가? 
+	
+	int i = 1;
+	int sum = 0;
+
+	for(; i<= 20; i++ ){ 
+		sum += i;
+		System.out.println(sum);
+		if(sum >= 10){
+			break;
+			}
+		}
+	}
+}
+
+class ForExample01 {
+	public static void main(String[] args) { //break문 -1부터 20까지 더한 총합의 크기가 100보다 큰 때는 언제인가? 
+	
+	int i = 1;
+	int sum = 0;
+
+	while(true){ 
+		sum += i;
+		if(sum > 100){
+			System.out.println("총합이 100보다 크면 종료"+"i="+i+ ",합="+sum);
+			break;
+			}
+			i++;
+		}
+	}
+}
+
+class ForExample01 {
+	public static void main(String[] args) { //break문, A-a ~ Z-z 출력, A-i에서 종료하고 싶을때
+	
+	//유니코드 A는 65, Z는 90,  a는 97, z는 122
+
+	 Outter:for(char big = 65; big <=90; big++){ 
+		for(char small = 97; small <= 122; small++){
+			System.out.println(big + "-"+ small);
+			if(small == 'i'){
+				break Outter;
+				}
+			}
+		}
+	}
+}
